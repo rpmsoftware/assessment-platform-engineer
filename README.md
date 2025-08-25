@@ -2,7 +2,7 @@
 
 ### Objective 
 
-Evaluate the candidate's proficiency in AWS CloudFormation, PowerShell and MSSQL through a series of tasks that simulate real-world scenarios.
+Evaluate the candidate's proficiency in AWS CloudFormation, PowerShell and MSSQL through a series of tasks that simulate real-world scenarios. Please submit all responces in a GitHub Repo. DO 
 
 ## Task 1: AWS CloudFormation
 
@@ -128,6 +128,22 @@ AS
 - The new procedure saved as usp_VehiclePart_ReadSearch.sql
 - Document any changes with justifications.
 
+
+## Task 5: Python
+### Objective
+Write a Python function to write an AsyncIterable of tuples to a set of CSV files. 
+
+### Instructions
+The function should produce a multiple of a given number of files. Where possible, make the size of each output file within a range given as a lower and upper bound. 
+Assume the AsyncIterable is too large to materialize in memory. Only pass over the AsyncIterable once.
+
+### Deliverables
+A single, well-commented Python script (async_writer.py) containing the implementation of the write_async_iterable_to_csvs function.
+The script should be executable and include a demonstration of the function's usage, similar to a `if __name__ == "__main__":` block.
+Include unit tests using unittest and README.md file that includes all instructions.
+
+___
+
 ## Appendix A
 
 ```
@@ -172,24 +188,31 @@ SELECT * FROM
 
 ## Delivery
 
-1. Create a new repository with your solution.
-2. Once your solution is checked in, send it to your hiring contact.
-3. Please deliver the solution within 7 days of receiving this assessment.
-4. Git repository structure:
+1. Do not fork this repository.
+2. Create a new repository with your solution.
+3. Once your solution is checked in, send it to your hiring contact.
+4. Please deliver the solution within 7 days of receiving this assessment.
+5. Git repository structure:
     ```
     /assessment-platform-engineer
     ├── README.md
     ├── task1
     │   ├── README.md
-    │   ├── WebServer.yaml
+    |   └── WebServer.yaml
     ├── task2
     │   ├── README.md
-    │   ├── Manage-EC2Instances.ps1
+    |   └── Manage-EC2Instances.ps1
     ├── task3
-    │   ├── usp_VehiclePart_UpdateDisplayOrder.sql
+    |   └── usp_VehiclePart_UpdateDisplayOrder.sql
     └── task4
+    |   ├── README.md
+    |   ├── usp_VehiclePart_ReadSearch.sql
+    |   └── Any other changes
+    └── task5
         ├── README.md
-        ├── usp_VehiclePart_ReadSearch.sql
-        └── Any other changes 
+        ├── async_writer.py
+        └── tests
+    		├──	__init__.py
+    		└──	test_async_writer.py
     ```
 
